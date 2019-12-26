@@ -4,7 +4,7 @@ class RandomStrategy < Strategy
   def self.decide_against(enemy)
     # Compute enemy.choices if applicable
     # Since it's a Random Strategy it's simply... random
-    [:cooperate,:defect].choice
+    [:cooperate,:defect].sample
   end
 
   def self.short_name

@@ -1,12 +1,12 @@
-require 'lib/world'
-require 'lib/year'
-require 'lib/member'
+require_relative 'lib/world'
+require_relative 'lib/year'
+require_relative 'lib/member'
 
 #Strategies
-require 'lib/strategy'
-require 'lib/cooperator_strategy'
-require 'lib/defector_strategy'
-require 'lib/random_strategy'
+require_relative 'lib/strategy'
+require_relative 'lib/cooperator_strategy'
+require_relative 'lib/defector_strategy'
+require_relative 'lib/random_strategy'
 
 World.next_year
 
