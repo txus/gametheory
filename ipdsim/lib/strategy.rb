@@ -20,7 +20,8 @@ class Strategy
     # Typical inheritance problem (who the heck are my children?)
     [CooperatorStrategy,
      DefectorStrategy, 
-     RandomStrategy]
+     RandomStrategy,
+     TitForTatStrategy]
   end
 
 end

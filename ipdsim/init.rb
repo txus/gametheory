@@ -5,15 +5,16 @@ require_relative 'lib/member'
 #Strategies
 require_relative 'lib/strategy'
 require_relative 'lib/cooperator_strategy'
+require_relative 'lib/tit_for_tat_strategy'
 require_relative 'lib/defector_strategy'
 require_relative 'lib/random_strategy'
 
 World.next_year
 
-a = Member.new(:strategy => RandomStrategy)
-b = Member.new(:strategy => RandomStrategy)
-c = Member.new(:strategy => DefectorStrategy)
-d = Member.new(:strategy => CooperatorStrategy)
+a = Member.new(:strategy => TitForTatStrategy)
+b = Member.new(:strategy => TitForTatStrategy)
+c = Member.new(:strategy => CooperatorStrategy)
+d = Member.new(:strategy => DefectorStrategy)
 
 while(World.alive?) do
   World.next_year
